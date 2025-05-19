@@ -107,18 +107,14 @@
       }
     }
 
-    video {
-      display: block;
-      margin: 30px auto 0;
-      max-width: 80%;
-      border-radius: 20px;
-      box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
-    }
-
     audio {
       position: absolute;
       bottom: 10px;
       left: 10px;
+    }
+
+    video {
+      display: none;
     }
   </style>
 </head>
@@ -134,8 +130,8 @@
     </p>
     <footer>Forever yours 💋</footer>
 
-    <!-- Embedded Video -->
-    <video controls autoplay loop>
+    <!-- Hidden Video (autoplaying silently in background) -->
+    <video autoplay loop muted playsinline>
       <source src="WIN_20250519_17_37_06_Pro.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -155,11 +151,5 @@
     }
     setInterval(createHeart, 500);
   </script>
-
-  <!-- Background Music -->
-  <audio autoplay loop>
-    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
 </body>
 </html>
